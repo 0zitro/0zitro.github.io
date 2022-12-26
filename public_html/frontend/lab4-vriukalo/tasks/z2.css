@@ -1,0 +1,24 @@
+.p1 {
+  color: red;
+  background-color: black;
+  font-weight: bold;
+  border: 6px solid lime;
+}
+
+.p2 {
+  color: white;
+  background-color: darkgray;
+  border: 2px dotted red;
+  position: relative;
+  left: 60px;
+}
+
+.p3 {
+  color: black;
+  background-color: yellow;
+  border: 6px dashed darkviolet;
+  position: relative;
+  left: 120px;
+}
+
+/*# sourceMappingURL=z2.css.map */

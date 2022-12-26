@@ -1,0 +1,3 @@
+pug -Pw src/ --out public_html/
+sass -w src/:public_html/
+serve public_html/
