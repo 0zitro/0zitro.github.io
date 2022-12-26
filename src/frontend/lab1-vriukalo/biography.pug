@@ -1,0 +1,79 @@
+mixin stage(title)
+    li
+        h3= title
+
+        if block
+            block
+
+mixin event(date, event_desc)
+    p.event= date + ": " + event_desc
+
+
+doctype html
+html(lang="uk")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //- script(src="../scripts/no-logo.js" defer) 
+        title Автобіографія
+    body
+        .homepage 
+            a(href="lab1.html") На домашню!
+        br
+
+        ol(type = "I")
+            +stage("Народження")
+                +event("02.08.2005", "Я народився")
+                +event("02.08.2006", "Мені виповнився 1 рік")
+                +event("22.05.2007", "Народився мій брат")
+            +stage("Дитинство")
+                +event("02.08.2010", "Я провів свій 5 день народження на морі в Херсоні")
+                +event("01.09.2011", "Я пішов в початкову школу")
+                +event("01.09.2015", "Я поступив в середню школу")
+            +stage("Юнацтво")
+                +event("08.12.2015", "Мені купили мій перший ноутбук, з якого я почав вивчення програмування")
+                +event("??.??.2017", "Я вивчив базовий браузерний стек (HTML/CSS/JS)")
+                +event("??.??.2019", "Я вивчив технології бекенду (Node.JS/Express/MongoDB), розширив знання з вебу (Pug, SASS, TypeScript)")
+                +event("??.??.2020", "Я почав цікавитися побудовою десктопних програм, опер. системою GNU/Linux")
+                +event("03.06.2011", "Я випустився зі школи із золотою медаллю та балом атестата 12.")
+        .content
+            ol 
+                h3 Мої улюблені фільми
+                
+                li Фільм 1
+                li Фільм 2
+                li Фільм 3
+            ol 
+                h3 Мої улюблені предмети
+                
+                li Інформатика
+                li Математика
+                li Англійська мова
+            ol 
+                h3 Мої улюблені страви
+                
+                li Борщ
+                    ul(type = "square")
+                        li Буряк
+                        li Капуста
+                li Вареники
+                    ol(type = "a")
+                        li мука
+                            ul(type = "disc")
+                                li місити
+                                li ліпити
+                        li сир
+                            ul(type = "circle")
+                                li молоти
+                                li солити
+            ol
+                h3 Не люблю:
+                li
+                    | C
+                    sub 2
+                    | H
+                    sub 5
+                    | OH
+            br
+            a(href="Hyperlinks/history.html") Історія

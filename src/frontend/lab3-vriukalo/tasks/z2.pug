@@ -1,0 +1,151 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="z2.css")
+        title Z2
+    body
+        table.t1
+            caption Таблиця 1.
+            tr
+                th Data1
+                th Data2
+                th Data3
+            tr
+                td Data4
+                td Data5
+                td Data6
+
+        br
+
+        table.t2
+            caption Таблиця 2.
+            tr
+                td Data1
+                td Data2
+                td Data3
+            tr
+                td Data4
+                td Data5
+                td Data6
+            tr
+                td Data7
+                td Data8
+                td Data9
+
+        br
+
+        table.t3
+            caption Таблиця 3.
+            tr
+                td Data1
+                td Data2
+                td Data3
+            tr
+                td Data4
+                td Data5
+                td Data6
+
+        br
+
+        table.t4
+            caption Таблиця 4.
+            tr
+                th Data1
+                th Data2
+                th Data3
+            tr
+                td Data4
+                td Data5
+                td Data6
+
+        br
+
+        table.t5
+            caption Таблиця 5. Використати теги frame і rules
+            tr
+                th 1
+                th 2
+                th 3
+            tr
+                td 4
+                td 5
+                td 6
+            tr
+                td 7
+                td 8
+                td 9
+        
+        p (Вибачте, але ці теги уже давно deprecated, я краще використаю складний шлях - `nth-child`, без класів у `td`-шок)
+        br
+
+        table.t6
+            caption Таблиця 6.
+            tr
+                th(rowspan="2") Стать
+                th Ріст
+                th Вага
+                th(rowspan="2") Вік
+            tr
+                th(colspan="2") Середнє значення
+            tr
+                td чоловіки
+                td 174
+                td 78
+                td 30
+            tr
+                td жінки
+                td 165
+                td 56
+                td 25
+
+        br
+
+        table.t7
+            caption Таблиця 7.
+            tr
+                td Data
+                td(colspan="2") Data
+                td Data
+            tr
+                td(rowspan="2") Data
+                td(rowspan="3") Data
+                td Data
+                td Data
+            tr
+                td(colspan="2") Data
+            tr
+                td 
+                td 
+                td 
+
+        br
+
+        table.t8
+            caption Таблиця 8. Таблиця вкладена в таблицю.
+            tr
+                td Data
+                td Data
+                td Data
+            tr
+                td
+                    table.t8_1
+                        caption Таблиця 8.1.
+                        tr
+                            td Data1
+                            td Data2
+                            td Data3
+                        tr
+                            td Data4
+                            td Data5
+                            td Data6
+                td Data
+                td
+                    table.t8_2
+                        caption Таблиця 8.2.
+                        tr
+                            td Data1
+                            td Data2
+                            td Data3

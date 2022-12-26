@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="z2.css">
+    <title>Z2</title>
+  </head>
+  <body>
+    <table class="t1">
+      <caption>Таблиця 1.</caption>
+      <tr>
+        <th>Data1</th>
+        <th>Data2</th>
+        <th>Data3</th>
+      </tr>
+      <tr>
+        <td>Data4</td>
+        <td>Data5</td>
+        <td>Data6</td>
+      </tr>
+    </table><br>
+    <table class="t2">
+      <caption>Таблиця 2.</caption>
+      <tr>
+        <td>Data1</td>
+        <td>Data2</td>
+        <td>Data3</td>
+      </tr>
+      <tr>
+        <td>Data4</td>
+        <td>Data5</td>
+        <td>Data6</td>
+      </tr>
+      <tr>
+        <td>Data7</td>
+        <td>Data8</td>
+        <td>Data9</td>
+      </tr>
+    </table><br>
+    <table class="t3">
+      <caption>Таблиця 3.</caption>
+      <tr>
+        <td>Data1</td>
+        <td>Data2</td>
+        <td>Data3</td>
+      </tr>
+      <tr>
+        <td>Data4</td>
+        <td>Data5</td>
+        <td>Data6</td>
+      </tr>
+    </table><br>
+    <table class="t4">
+      <caption>Таблиця 4.</caption>
+      <tr>
+        <th>Data1</th>
+        <th>Data2</th>
+        <th>Data3</th>
+      </tr>
+      <tr>
+        <td>Data4</td>
+        <td>Data5</td>
+        <td>Data6</td>
+      </tr>
+    </table><br>
+    <table class="t5">
+      <caption>Таблиця 5. Використати теги frame і rules</caption>
+      <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </table>
+    <p>(Вибачте, але ці теги уже давно deprecated, я краще використаю складний шлях - `nth-child`, без класів у `td`-шок)</p><br>
+    <table class="t6">
+      <caption>Таблиця 6.</caption>
+      <tr>
+        <th rowspan="2">Стать</th>
+        <th>Ріст</th>
+        <th>Вага</th>
+        <th rowspan="2">Вік</th>
+      </tr>
+      <tr>
+        <th colspan="2">Середнє значення</th>
+      </tr>
+      <tr>
+        <td>чоловіки</td>
+        <td>174</td>
+        <td>78</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>жінки</td>
+        <td>165</td>
+        <td>56</td>
+        <td>25</td>
+      </tr>
+    </table><br>
+    <table class="t7">
+      <caption>Таблиця 7.</caption>
+      <tr>
+        <td>Data</td>
+        <td colspan="2">Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Data</td>
+        <td rowspan="3">Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td colspan="2">Data</td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+    </table><br>
+    <table class="t8">
+      <caption>Таблиця 8. Таблиця вкладена в таблицю.</caption>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>
+          <table class="t8_1">
+            <caption>Таблиця 8.1.</caption>
+            <tr>
+              <td>Data1</td>
+              <td>Data2</td>
+              <td>Data3</td>
+            </tr>
+            <tr>
+              <td>Data4</td>
+              <td>Data5</td>
+              <td>Data6</td>
+            </tr>
+          </table>
+        </td>
+        <td>Data</td>
+        <td>
+          <table class="t8_2">
+            <caption>Таблиця 8.2.</caption>
+            <tr>
+              <td>Data1</td>
+              <td>Data2</td>
+              <td>Data3</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+caption {
+  caption-side: bottom;
+}
+
+table.t1 {
+  border: 3px solid darkviolet;
+  height: 200px;
+  width: 40%;
+}
+table.t1 th, table.t1 td {
+  border: 1px double #000;
+}
+table.t1 td {
+  text-align: right;
+  vertical-align: top;
+}
+table.t1 th {
+  font-weight: normal;
+}
+table.t1 tr:nth-child(2) {
+  height: 150px;
+}
+table.t1 th:nth-child(1), table.t1 td:nth-child(1) {
+  width: 150px;
+}
+
+table.t2 {
+  border: 2px solid green;
+  border-spacing: 20px;
+}
+table.t2 th, table.t2 td {
+  border: 2px solid green;
+  padding: 0;
+  width: 20vw;
+}
+
+table.t3 {
+  border: 2px solid red;
+  border-spacing: 20px;
+}
+table.t3 th, table.t3 td {
+  border: 2px solid red;
+  padding: 0;
+  width: 30vw;
+}
+
+table.t4 {
+  border: 2px solid green;
+  border-spacing: 0;
+}
+table.t4 th, table.t4 td {
+  border: 2px solid green;
+  width: 30vw;
+}
+table.t4 td {
+  padding: 10px;
+}
+
+table.t5 {
+  border-left: 4px solid hotpink;
+  border-right: 4px solid hotpink;
+  padding: 1px;
+  border-spacing: 0;
+}
+table.t5 th, table.t5 td {
+  border: 2px solid hotpink;
+  width: 5vw;
+}
+table.t5 th {
+  border-top: none;
+  font-weight: normal;
+  text-align: left;
+}
+table.t5 tr:nth-child(2) > td:nth-child(2) {
+  background-color: springgreen;
+  text-align: center;
+}
+table.t5 tr:nth-child(3) {
+  background-color: chartreuse;
+}
+table.t5 tr:nth-child(3) > td {
+  border: none;
+  border-top: 2px solid hotpink;
+  text-align: center;
+}
+table.t5 tr:nth-child(3) > td:nth-child(1) {
+  border-left: 2px solid hotpink;
+}
+table.t5 tr:nth-child(3) > td:nth-child(3) {
+  border-right: 2px solid hotpink;
+}
+
+table.t6 {
+  border: 2px double #000;
+}
+table.t6 th, table.t6 td {
+  border: 2px double #000;
+  padding: 0 10px;
+  text-align: center;
+}
+
+table.t7 {
+  border: 1px solid #000;
+  border-spacing: 0;
+}
+table.t7 th, table.t7 td {
+  border: 1px solid #000;
+  padding: 0;
+  width: 5vw;
+  height: 10vh;
+}
+table.t7 tr:nth-child(1) > td:nth-child(1) {
+  background-color: lightblue;
+}
+table.t7 tr:nth-child(3) > td:nth-child(1) {
+  background-color: coral;
+}
+table.t7 tr:nth-child(4) > td:nth-child(3) {
+  background-color: magenta;
+}
+
+table.t8_1, table.t8_2 {
+  border: 1px solid;
+  border-spacing: 0;
+}
+table.t8_1 th, table.t8_1 td, table.t8_2 th, table.t8_2 td {
+  border: 1px solid;
+  padding: 0;
+}
+
+table.t8_1 {
+  border-color: fuchsia;
+}
+table.t8_1 th, table.t8_1 td {
+  border-color: fuchsia;
+}
+
+table.t8_2 {
+  border-color: darkviolet;
+}
+table.t8_2 th, table.t8_2 td {
+  border-color: darkviolet;
+}
+
+table.t8 {
+  border: 2px solid teal;
+}
+table.t8 > tbody > tr > th, table.t8 > tbody > tr > td {
+  padding: 0;
+  border: 2px solid teal;
+}
+
+table.t6 > caption, table.t8 > caption {
+  caption-side: top;
+}
+
+/*# sourceMappingURL=z2.css.map */

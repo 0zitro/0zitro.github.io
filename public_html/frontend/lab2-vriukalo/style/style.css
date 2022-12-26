@@ -1,0 +1,60 @@
+div {
+  width: 30px;
+  height: 10px;
+}
+
+p {
+  width: 40px;
+  height: 15px;
+}
+
+* {
+  color: white;
+}
+
+.main {
+  background-color: red;
+  padding: 5px;
+}
+
+.content, .content2 {
+  background-color: green;
+  display: inline-block;
+}
+
+.content2:hover {
+  width: 100px;
+  height: 40px;
+  background-color: #c0c0c0;
+}
+
+.content2 + p::before {
+  content: "x";
+  background-color: blue;
+  width: 10px;
+  height: 10px;
+}
+
+.content2 ~ p {
+  background-color: yellow;
+}
+
+.main > .other {
+  background-color: magenta;
+}
+
+input {
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+input:checked {
+  background-color: #000;
+  border-left-color: #06F;
+  border-right-color: #06F;
+}
+
+/*# sourceMappingURL=style.css.map */

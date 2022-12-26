@@ -1,0 +1,44 @@
+img {
+  width: 12vw;
+  height: 16vw;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+img.anim {
+  width: 2em;
+  height: 2em;
+}
+
+table {
+  border-spacing: 0;
+  border: 1px solid black;
+  width: 100vw;
+}
+table th, table td {
+  padding: 3px;
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.cont {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  flex-direction: column;
+}
+.cont video {
+  width: 80vw;
+  height: 80vh;
+}
+.cont audio {
+  width: 80vw;
+}
+
+/*# sourceMappingURL=z3.css.map */

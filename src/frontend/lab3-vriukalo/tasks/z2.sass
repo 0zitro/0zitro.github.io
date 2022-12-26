@@ -1,0 +1,150 @@
+caption
+    caption-side: bottom
+
+table.t1
+    border: 3px solid darkviolet
+    height: 200px
+    width: 40%
+
+    th, td
+        border: 1px double #000
+    
+    td
+        text-align: right
+        vertical-align: top
+
+    th
+        font-weight: normal
+
+    tr:nth-child(2)
+        height: 150px
+    
+    th:nth-child(1), td:nth-child(1)
+        width: 150px
+
+
+table.t2
+    border: 2px solid green
+    border-spacing: 20px
+
+    th, td
+        border: 2px solid green
+        padding: 0
+        width: 20vw
+
+
+table.t3
+    border: 2px solid red
+    border-spacing: 20px
+
+    th, td
+        border: 2px solid red
+        padding: 0
+        width: 30vw
+
+
+table.t4
+    border: 2px solid green
+    border-spacing: 0
+
+    th, td
+        border: 2px solid green
+        width: 30vw
+    
+    td
+        padding: 10px
+
+
+table.t5
+    border-left: 4px solid hotpink
+    border-right: 4px solid hotpink
+    padding: 1px
+    border-spacing: 0
+
+    th, td
+        border: 2px solid hotpink
+        width: 5vw
+    
+    th
+        border-top: none
+        font-weight: normal
+        text-align: left
+
+    tr:nth-child(2) > td:nth-child(2)
+        background-color: springgreen
+        text-align: center
+
+    tr:nth-child(3)
+        background-color: chartreuse
+
+        > td
+            border: none
+            border-top: 2px solid hotpink
+            text-align: center
+
+        > td:nth-child(1)
+            border-left: 2px solid hotpink
+        > td:nth-child(3)
+            border-right: 2px solid hotpink
+
+
+table.t6
+    border: 2px double #000
+
+    th, td
+        border: 2px double #000
+        padding: 0 10px
+        text-align: center
+
+
+table.t7
+    border: 1px solid #000
+    border-spacing: 0
+
+    th, td
+        border: 1px solid #000
+        padding: 0
+        width: 5vw
+        height: 10vh 
+
+    tr:nth-child(1) > td:nth-child(1)
+        background-color: lightblue
+
+    tr:nth-child(3) > td:nth-child(1)
+        background-color: coral
+
+    tr:nth-child(4) > td:nth-child(3)
+        background-color: magenta
+
+table.t8_1, table.t8_2
+    border: 1px solid
+    border-spacing: 0
+    
+    th, td
+        border: 1px solid
+        padding: 0
+
+table.t8_1
+    border-color: fuchsia
+
+    th, td
+        border-color: fuchsia
+
+table.t8_2
+    border-color: darkviolet
+
+    th, td
+        border-color: darkviolet
+
+
+table.t8
+    border: 2px solid teal
+
+    >tbody >tr 
+        >th, >td
+            padding: 0
+            border: 2px solid teal
+
+table.t6, table.t8
+    > caption
+        caption-side: top

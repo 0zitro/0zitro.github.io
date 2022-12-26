@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="z3.css")
+        title Z3
+    body
+        table 
+            tr
+                th(colspan="4")
+                    img.anim(src="../../media/lab3-gif-animation.gif", alt="deez balls")
+                    | Мої одногрупники
+            tr
+                td
+                    img(src="../../media/lab3-photo1.jpg", alt="photo1", onclick="change_bio(0)")
+                td
+                    img(src="../../media/lab3-photo2.jpg", alt="photo2", onclick="change_bio(1)")
+                td
+                    img(src="../../media/lab3-photo3.jpg", alt="photo3", onclick="change_bio(2)")
+                td
+                    img(src="../../media/lab3-photo4.jpg", alt="photo4", onclick="change_bio(3)")
+            tr
+                td(colspan="4")
+                    p#bio
+        .cont
+            video(controls)
+                source(src="../../media/lab3-attack-video.webm", type="video/webm")
+            audio(controls)
+                source(src="../../media/lab3-attack-audio.ogg", type="audio/ogg")
+
+        br
+        a(href="../../media/lab3-attack-video.webm") Video 
+        br
+        a(href="../../media/lab3-attack-audio.ogg") Audio
+
+        script(src="z3.js") 
